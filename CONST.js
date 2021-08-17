@@ -1,18 +1,20 @@
+const Config = require("./config/config.json")
 module.exports.DataBase ={
-    dialect:"mysql",
-    host:"localhost"
+    dialect:Config.development.dialect,
+    host:Config.development.host
     
 }
 module.exports.Config ={
-    db:"pearvolga",
-    loginDb:"root",
-    passDb:"1q2w#E$R!"
+    db:Config.development.database,
+    loginDb:Config.development.username,
+    passDb:Config.development.password
    }
 
    module.exports.Message ={
     userDelite:"Пользователь удален",
     dbConnected:"База данных подключена",
-    dbError:"Ошибка подключения БД"
+    dbError:"Ошибка подключения БД",
+    eSync:"Ошибка Синхронизации"
    }
 
    module.exports.Status ={

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const Users = require('../module/users')
+const Users = require('../models/users')
 const {Url } = require('../CONST.js')
 const { UsersModule } = require('../methods/api.js')
 

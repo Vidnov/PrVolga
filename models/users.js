@@ -34,12 +34,6 @@ const users = db.define("users", {
     ]
 })
 
-try {
-    console.log("Успешаная синхронизация с БД")
-} catch (error) {
-    console.log("Ошибка синхронизации",error)
-}
-
 
 
 module.exports = users;
